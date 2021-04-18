@@ -1,0 +1,8 @@
+#side-header{       /*Solamente puede haber un id con este nombre por pagina*/
+    background-color:greenyellow;
+}
+
+.encabezado{    /*La clase esta destinada para ser reutilizada*/
+    color:red;
+    text-transform: uppercase;  /*Propiedad que me permite cambiar el texto mayuscula*/
+}
