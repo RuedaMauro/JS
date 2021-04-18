@@ -1,8 +1,56 @@
-#side-header{       /*Solamente puede haber un id con este nombre por pagina*/
-    background-color:greenyellow;
+/**GLOBALES**/
+.contenedor{
+    max-width: 1200px;
+    margin:0 auto;
 }
 
-.encabezado{    /*La clase esta destinada para ser reutilizada*/
-    color:red;
-    text-transform: uppercase;  /*Propiedad que me permite cambiar el texto mayuscula*/
+
+/*HEADER*/
+.site-header.inicio{       
+    background-image: url(../img/encabezado.jpg);
+    background-position: center center;    /*posicionar la imagen*/
+    background-size: cover; /*fuerza todo el espacio disponible para ver la imagen en toda la pantalla*/
+    height: 100vh;  /*Detecta el tamaño de la pantalla*/
+    min-height: 600px;   /*Propiedad mi la pantalla si se minimiza */
 }
+
+.barra {
+    display: flex;
+    justify-content: space-between; /*alinea horizontalmente*/
+    align-items: center; /*alinea verticalmente*/
+    padding-top: 30px;
+}
+
+/**Navegacion**/
+
+.navegacion a{
+    color:  #ffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+
+.navegacion a:hover{        /*Efecto de seleccion*/
+    color: #71b710;
+}
+
+.navegacion a:last-of-type{     /*Pseudo selector no es un selector como tal pero te permite seleccionar el ultimo elemento*/
+    margin: 0;
+}
+
+
+
+/*
+#side-header{       Solamente puede haber un id con este nombre por pagina
+    color: red;
+
+}
+
+flexbox estandar para posicionar objetos
+
+.encabezado{    La clase esta destinada para ser reutilizada
+    color:red;
+    text-transform: uppercase;  Propiedad que me permite cambiar el texto mayuscula
+}
+*/
